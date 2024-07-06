@@ -1,0 +1,17 @@
+.search-result{
+
+    min-height: 500px;
+    width: 100%;
+    padding-top: 100px;
+    font-weight: 900;
+    color: white;
+}
+.search-img{
+    height: 145px;
+}
+.search-img-div{
+    display: inline-block;
+    margin-left: 10px;
+    margin-bottom: 15px;
+
+}

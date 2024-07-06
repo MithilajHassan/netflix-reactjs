@@ -7,7 +7,7 @@ export default function Banner() {
   useEffect(() => {
     axios.get(`/trending/all/day?api_key=${API_KEY}&language=en-US`).then((response)=>{
       setMovie(response.data.results[0])
-    }).catch(err=>alert('Network_Error!!'))
+    }).catch(err=>console.log('Network_Error!!'))
   }, [])
   
   return (

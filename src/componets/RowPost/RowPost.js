@@ -10,7 +10,7 @@ export default function RowPost(props) {
   useEffect(() => {
     axios.get(props.url).then((response)=>{
       setMovies(response.data.results)
-    }).catch(err=>alert('Network_Error!!'))
+    }).catch(err=>console.log('Network_Error!!'))
   }, [props.url])
 
   const opts = {
@@ -25,7 +25,7 @@ export default function RowPost(props) {
         if(response.data.results.length !== 0){
           setVideoId(response.data.results[0])
         }
-      }).catch(err=>alert('NetWork_Error'+err))
+      }).catch(err=>console.log('NetWork_Error'+err))
   }
 
   return (
